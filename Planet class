@@ -1,0 +1,32 @@
+public Planet(String n, int m){
+        planetName = n;
+        numMoons = m;
+
+    }
+
+    public String toString(){
+        return planetName + " " + numMoons;
+    }
+
+
+
+    public void setPlanetName(String n){
+        this.planetName = n;
+
+    }
+
+    public String getPlanetName(){
+        return planetName;
+
+    }
+
+    public void setNumMoons(int m){
+        this.numMoons = m;
+
+    }
+
+    public int getNumMoons(){
+        return numMoons;
+
+    }
+}
