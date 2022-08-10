@@ -1,0 +1,31 @@
+import java.util.Date;
+import java.util.Scanner;
+public class planets {
+   public static void main(String[] args) {
+		Scanner input= new Scanner(System.in);
+	      System.out.println("Gezegen gir");
+	      String planett= input.next();
+	      System.out.println("earthWeight gir");
+	      int earthWeightt= input.nextInt();
+	      
+	      System.out.println(calculateWeight(earthWeightt,planett));
+
+	}
+
+	public static double calculateWeight(double earthWeight, String planet)
+    {
+      double returnvariable=1;
+      switch(planet)
+      {
+        case "Mercury": returnvariable=earthWeight*0.378; break;
+        case "Venus" : returnvariable=earthWeight*0.907; break;
+        case "Mars" : returnvariable=earthWeight*0.377; break;
+        case "Jupiter" : returnvariable=earthWeight*2.36; break;
+        case "Saturn" : returnvariable=earthWeight*0.916; break;
+        default: System.out.println("Invalid planet entry");
+        
+      }
+      return returnvariable;
+      
+    }
+}
